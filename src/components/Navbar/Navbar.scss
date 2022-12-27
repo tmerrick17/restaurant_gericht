@@ -24,7 +24,7 @@
     list-style: none;
 
     li {
-      margin: 0 1rem;
+      margin-inline: 1rem;
       cursor: pointer;
       transition: color 0.25s ease;
 
@@ -40,7 +40,7 @@
     align-items: center;
 
     a {
-      margin: 0 1rem;
+      margin-inline: 1rem;
       text-decoration: none;
       transition: border-bottom 1s ease; //! Transition not working
 

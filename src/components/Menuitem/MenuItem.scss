@@ -1,0 +1,42 @@
+.app__menu-item {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-block: 1rem;
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__name {
+    flex: 1;
+
+    p {
+      color: #DCCA87;
+    }
+  }
+
+  &__dash {
+    width: 90px;
+    height: 1px;
+    background-color: var(--color-golden);
+    margin-inline: 1rem;
+  }
+
+  &__price {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+  }
+
+  &__tags {
+    width: 100%;
+    margin-top: 0.2rem;
+
+    p {
+      color: #aaa;
+    }
+  }
+}

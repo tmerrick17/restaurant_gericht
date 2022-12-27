@@ -1,0 +1,94 @@
+.app__about-us {
+  position: relative;
+
+  &__overlay {
+    position: absolute;
+    inset: 0;
+
+    img {
+      width: 391px;
+      height: 415px;
+      z-index: 0;
+    }
+  }
+
+  &__content {
+    width: 100%;
+    z-index: 2;
+
+    &__about {
+      flex: 1;
+      display: flex;
+      justify-content: flex-end;
+      align-items: flex-end;
+      flex-direction: column;
+      text-align: right;
+    }
+
+    &__knife {
+      margin: 2rem 4rem;
+
+      img {
+        height: 910px;
+      }
+    }
+
+    &__history {
+      flex: 1;
+      display: flex;
+      justify-content: flex-start;
+      align-items: flex-start;
+      flex-direction: column;
+      text-align: left;
+    }
+
+    &__about,
+    &__history {
+      p {
+        margin-block: 2rem;
+        color: var(--color-grey);
+      }
+    }
+  }
+
+  @media screen and (max-width: 2000px) {
+    &__content {
+
+      &__about,
+      &__history {
+
+        p {
+          margin-block: 4rem;
+        }
+      }
+
+      &__knife {
+
+        img {
+          height: 1110px;
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 900px) {
+    &__content {
+      flex-direction: column;
+
+      &__knife {
+        margin-block: 4rem;
+      }
+    }
+  }
+
+  @media screen and (max-width: 650px) {
+    &__overlay {
+
+      img {
+        width: 80%;
+        height: 320px;
+      }
+    }
+  }
+}
+
